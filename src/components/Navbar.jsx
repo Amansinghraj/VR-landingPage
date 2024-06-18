@@ -18,9 +18,9 @@ const Navbar = () => {
               <img className="w-10 h-10 mr-2" src={logo} alt="logo" />
               <span className="text-xl tracking-tight">VR</span>
             </div>
-            <ul className='hidden lg:flex ml-14 space-x-12'>
+            <ul className='hidden lg:flex ml-14 space-x-12 '>
               {navItems.map((item , index)=>(
-                  <li key={index}>
+                  <li key={index} className=' hover:text-orange-500'>
                     <a href={item.href}>{item.label}</a>
                   </li>
 
